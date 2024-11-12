@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uglyman's Thrift</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="page" class="site page-home">
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="/"><span class="circle"></span>.Uglyman</a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="shop.html">Featured Products</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                <li><a href="account.html">Sign Up</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                                <li><a href="#">KSH<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">KSH</a></li>
+                                        <li><a href="#">USD</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">English <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">English</a></li>
+                                        <li><a href="#">German</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">French</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top -->
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="/"><span class="circle"></span>.Uglyman</a></div>
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="women.html">Women</a></li>
+                                    <li><a href="men.html">Men</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide"><a href="#">
+                                        <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                    </a></li>
+                                <li><a href="cart.html" class="iscart">
+
+                                        <div class="icon-large">
+                                            <i class="ri-shopping-cart-line"></i>
+                                            <div class="fly-item"><span class="item-number">0</span></div>
+                                        </div>
+
+                                        <div class="icon-text">
+                                            <div class="mini-text">Total</div>
+                                            <div class="cart-total">Ksh0.00</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-nav -->
+
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for products">
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-main -->
+
+        </header>
+        <!-- Header -->
+        <main>
+            <div class="trending">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="sectop flexitem">
+                            <h2><span class="circle"></span><span>Trending Products</span></h2>
+                        </div>
+                        <div class="column">
+                            <div class="flexwrap">
+                                <div class="row products big">
+                                    <div class="item">
+                                        <div class="offer">
+                                            <p>Offer ends at</p>
+                                            <ul class="flexcenter" id="demo">
+                                                <li id="days"></li>
+                                                <li id="hours"></li>
+                                                <li id="minutes"></li>
+                                                <li id="seconds"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="media">
+                                            <div class="image">
+                                                <a href="page-offer.html">
+                                                    <img src="assets/products/apparel4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>31%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                            <div class="price">
+                                                <span class="current">Ksh2000</span>
+                                                <span class="normal mini-text">Ksh2500</span>
+                                            </div>
+                                            <div class="stock mini-text">
+                                                <div class="qty">
+                                                    <span>Stock: <strong class="qty-available">107</strong></span>
+                                                    <span>Sold: <strong class="qty-sold">3,459</strong></span>
+                                                </div>
+                                                <div class="bar">
+                                                    <div class="available"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row products mini">
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/apparel3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>32%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Black Women's Coat Dress</a></h3>
+                                            
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh2000</span>
+                                                <span class="normal mini-text">Ksh2500</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2975 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/tennis.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>25%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Checked Tennis skirt</a></h3>
+                                            
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(1,955)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh1000</span>
+                                                <span class="normal mini-text">Ksh1300</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2584 sold</p>
+                                                <p>Free Shipping</p>
+                                                <p class="stock-danger">Stock: 7 left!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/bv.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>37%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Bottega Jeans</a></h3>
+                                            
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(1,559)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh2000</span>
+                                                <span class="normal mini-text">Ksh2500</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2151 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/Palm Angels White Tshirt.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>20%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Palm Angels Tshirt</a></h3>
+                                            
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(1,411)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh1500</span>
+                                                <span class="normal mini-text">Ksh1800</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>1843 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row products mini">
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/shoe1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>32%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Men Slip On Shoes Casual with Arch Support Insoles</a></h3>
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh1299</span>
+                                                <span class="normal mini-text">Ksh1599</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2975 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/apparel2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>47%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Womens Lightweight Something</a></h3>
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(994)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh679</span>
+                                                <span class="normal mini-text">Ksh800</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>1257 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/Drew black hoodie.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>44%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Drew Hoodie</a></h3>
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(543)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh1800</span>
+                                                <span class="normal mini-text">Ksh2200</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>995 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/runstar motion.webp" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>18%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Converse Runstar motion Sneaker</a></h3>
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(335)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">Ksh4000</span>
+                                                <span class="normal mini-text">Ksh4500</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>758 sold</p>
+                                                <p>Free Shipping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- trending -->
+
+            <div class="features">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="sectop flexitem">
+                                <h2><span class="circle"></span><span>Featured Products</span></h2>
+                                <div class="second-links">
+                                    <a href="#" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                            <div class="products main flexwrap">
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/bape hoodie orange.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>25%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,955)</span>
+                                        </div>
+                                        <h3><a href="#">Bape Hoodie</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh2500</span>
+                                            <span class="normal mini-text">Ksh3000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/bv tshrt.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>17%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(994)</span>
+                                        </div>
+                                        <h3><a href="#">Bottega Venetta Tshirt</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1600</span>
+                                            <span class="normal mini-text">Ksh1800</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/cacti.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>17%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(994)</span>
+                                        </div>
+                                        <h3><a href="#">Cactus JAck Tshirt</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1600</span>
+                                            <span class="normal mini-text">Ksh1800</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>31%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(3,459)</span>
+                                        </div>
+                                        <h3><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1299</span>
+                                            <span class="normal mini-text">Ksh1898</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>65% Polyester, 35% Cotton</li>
+                                                <li>Imported</li>
+                                                <li>Machine Wash</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>35%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(10)</span>
+                                        </div>
+                                        <h3><a href="#">Womens Summer Boho Floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1180</span>
+                                            <span class="normal mini-text">Ksh1890</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>32%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,551)</span>
+                                        </div>
+                                        <h3><a href="#">Men Slip On Shoes Casual with Arch Support Insoles</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1990</span>
+                                            <span class="normal mini-text">Ksh2190</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>30%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,237)</span>
+                                        </div>
+                                        <h3><a href="#">Skechers Women's Go Joy Walking Shoe Sneaker</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh4595</span>
+                                            <span class="normal mini-text">Ksh6495</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/chicago.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>30%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,237)</span>
+                                        </div>
+                                        <h3><a href="#">Air Jordan1  Shoe Sneaker</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh3500</span>
+                                            <span class="normal mini-text">Ksh4500</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>25%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(106)</span>
+                                        </div>
+                                        <h3><a href="#">Walking Shoe Sneaker Womens</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1399</span>
+                                            <span class="normal mini-text">Ksh1898</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
+                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>24%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(25)</span>
+                                        </div>
+                                        <h3><a href="#">Womens Summer Tosca Shoe</a></h3>
+                                        <div class="price">
+                                            <span class="current">Ksh1490</span>
+                                            <span class="normal mini-text">Ksh1898</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Polyester, Cotton</li>
+                                                <li>Pull On closure</li>
+                                                <li>Fashion Personality</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- featured products -->
+
+            <div class="banners">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="banner flexwrap">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="assets/banner/sbanner.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h3>Hot Sale!</h3>
+                                            <h4><span>Get the deal in here</span><br>Best Kicks</h4>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item get-gray">
+                                        <div class="image">
+                                            <img src="assets/banner/banner2.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h3>Crazy Sale!</h3>
+                                            <h4><span>Discount everyday</span><br>Office Outfit</h4>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- banners -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- Main -->
+
+        <footer>
+            <div class="newsletter">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="content">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Get E-mail updates about our latest shop and <strong>special offers</strong></p>
+                            </div>
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                <input type="mail" placeholder="Your email address" required>
+                                <button type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- newsletter -->
+
+            <div class="widgets">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexwrap">
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Help & Contact</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Your Orders</a></li>
+                                        <li><a href="#">Shipping Rates</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Assistant</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Product Categories</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Women's Fashion</a></li>
+                                        <li><a href="#">Men's Fashion</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Payment Info</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Bussiness Card</a></li>
+                                        <li><a href="#">Shop with Points</a></li>
+                                        <li><a href="#">Reload Your Balance</a></li>
+                                        <li><a href="#">Paypal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>About Us</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="">Company Info</a></li>
+                                        <li><a href="">News</a></li>
+                                        <li><a href="">Investors</a></li>
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">Policies</a></li>
+                                        <li><a href="">Customer reviews</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- widgets-->
+
+            <div class="footer-info">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexcol">
+                            <div class="logo">
+                                <a href=""><span class="circle"></span>.Uglyman</a>
+                            </div>
+                            <div class="socials">
+                                <ul class="flexitem">
+                                    <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href="https://www.instagram.com/uglymans_thrift/"><i class="ri-instagram-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mini-text">Copyright 2023 © .Uglyman. All right reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Trending</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Cart</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">0</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- menu bottom -->
+
+        <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Search" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- search bottom -->
+
+        <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Display the countdown timer in an element -->
+<!-- <p id="demo"></p> -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 13, 2023 15:13:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = days + "d";
+  document.getElementById("hours").innerHTML = hours + "h";
+  document.getElementById("minutes").innerHTML = minutes + "m";
+  document.getElementById("seconds").innerHTML = seconds + "s";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+
+</html>
